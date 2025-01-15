@@ -1,0 +1,31 @@
+graph TD
+    A[GUI Layer - tkinter/PyQt] --> B[Controller]
+    B --> C[File Scanner]
+    B --> D[Image Handler]
+    B --> E[File Hash Calculator]
+    
+    C --> F[File System Interface]
+    D --> F
+    E --> F
+    
+    subgraph Core Components
+        C
+        D
+        E
+    end
+    
+    subgraph Data Storage
+        G[Results Cache]
+        H[User Preferences]
+    end
+    
+    B --> G
+    B --> H
+    
+    subgraph File Operations
+        I[File Delete]
+        J[File Move]
+    end
+    
+    B --> I
+    B --> J
