@@ -15,7 +15,7 @@ A Python-based application for identifying and managing duplicate files in a spe
 
 ### Components
 
-1. **GUI Layer (PyQt/tkinter)**
+1. **GUI Layer (CustomTkinter https://github.com/TomSchimansky/CustomTkinter)** 
    - Main window management
    - Settings panel
    - Results display
